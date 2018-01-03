@@ -1,0 +1,79 @@
+body{
+  background-color: #111;
+  color: #FFF;
+  font-size: 62.5%;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+}
+h1, h3, h4{
+  text-align: center;
+}
+
+h1{
+  font-size: 2.4rem;
+}
+
+h3{
+  font-size: 1.6rem;
+}
+
+h4{
+  font-size: 1.3rem;
+}
+
+.container{
+  width: 70%;
+  height: 40%;
+  margin: 0 auto;
+  margin-top: 17.25%;
+}
+
+.bigger{
+  font-size: 1.4rem;
+  text-align: center;
+  width: 100%;
+}
+
+#bottom{
+  position: fixed;
+  height: 10%;
+  width: 80%;
+  left: 10%;
+  bottom: 0%;
+
+  background: inherit;
+  background: -moz-radial-gradient(bottom, #1adb89 0%, #1adb89DD 5%, #207cca33 40%, #7db9e800 60%);
+  background: -webkit-radial-gradient(bottom, #1adb89 0%, #1adb89DD 5%, #207cca33 40%, #7db9e800 60%);
+  background: radial-gradient(bottom, #1adb89 0%, #1adb89DD 5%, #207cca33 40%, #7db9e800 60%);
+}
+
+#tagline{
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 500px) {
+  #bottom{
+    width: 100%;
+    left: 0%;
+    height: 8%;
+
+    background: -moz-radial-gradient(bottom, #1adb89 0%, #1adb89DD 5%, #207cca33 50%, #7db9e800 70%);
+    background: -webkit-radial-gradient(bottom, #1adb89 0%, #1adb89DD 5%, #207cca33 50%, #7db9e800 70%);
+    background: radial-gradient(bottom, #1adb89 0%, #1adb89DD 5%, #207cca33 50%, #7db9e800 70%);
+  }
+
+  .container{
+    position: relative;
+    top: 55%;
+    transform: translateY(55%);
+  }
+
+  h4{
+    font-size: 1.5rem;
+  }
+}

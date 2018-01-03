@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Fright</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  </head>
+
+  <body>
+    <% if show %>
+      <div class="container">
+        <h1>Daily Fright</h1>
+        <p class="bigger"><a href="/new">New film</a></p>
+        <p id="tagline">A new fright every day</p>
+      </div>
+    <% else %>
+      <h3><%= film["Title"] %></h3>
+      <% src = film["Poster"] %>
+      <%= "<img src='#{src}'></img>" %>
+      <!--<img src="https://www.placecage.com/300/475"></img>-->
+      <h4><%= film["Year"] %></h4>
+    <% end %>
+
+    <div id="bottom"></div>
+  </body>
+
+</html>
